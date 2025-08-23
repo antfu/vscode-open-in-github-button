@@ -31,7 +31,7 @@
     "res/*"
   ],
   "engines": {
-    "vscode": "^1.77.0"
+    "vscode": "^1.103.0"
   },
   "activationEvents": [
     "onStartupFinished"
@@ -53,15 +53,15 @@
   "devDependencies": {
     "@antfu/eslint-config": "^5.2.1",
     "@antfu/ni": "^25.0.0",
-    "@types/node": "^24.2.0",
-    "@types/vscode": "^1.77.0",
+    "@types/node": "^24.3.0",
+    "@types/vscode": "^1.103.0",
     "@vscode/vsce": "^3.6.0",
     "bumpp": "^10.2.3",
-    "eslint": "^9.33.0",
+    "eslint": "^9.34.0",
     "esno": "^4.8.0",
     "ovsx": "^0.10.5",
     "pnpm": "^10.15.0",
-    "rimraf": "^5.0.10",
+    "rimraf": "^6.0.1",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
     "vitest": "^3.2.4",
