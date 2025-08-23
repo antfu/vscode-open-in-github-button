@@ -4,7 +4,7 @@
   "displayName": "Open in GitHub Button",
   "version": "0.1.1",
   "private": true,
-  "packageManager": "pnpm@8.1.1",
+  "packageManager": "pnpm@10.15.0",
   "description": "Add a button to go to the GitHub on the status bar",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -26,7 +26,9 @@
   "main": "./dist/index.js",
   "icon": "res/icon.png",
   "files": [
-    "dist"
+    "LICENSE.md",
+    "dist/*",
+    "res/*"
   ],
   "engines": {
     "vscode": "^1.77.0"
@@ -42,26 +44,27 @@
     "dev": "nr build --watch",
     "lint": "eslint .",
     "vscode:prepublish": "nr build",
-    "publish": "vsce publish --no-dependencies",
-    "pack": "vsce package --no-dependencies",
+    "ext:publish": "vsce publish --no-dependencies",
+    "package": "vsce package --no-dependencies",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && nr publish"
+    "release": "bumpp"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.38.4",
-    "@antfu/ni": "^0.21.2",
-    "@types/node": "^18.15.11",
+    "@antfu/eslint-config": "^5.2.1",
+    "@antfu/ni": "^25.0.0",
+    "@types/node": "^24.2.0",
     "@types/vscode": "^1.77.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.37.0",
-    "esno": "^0.16.3",
-    "pnpm": "^8.1.1",
-    "rimraf": "^4.4.1",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.3",
-    "vite": "^4.2.1",
-    "vitest": "^0.29.8",
-    "vsce": "^2.15.0"
+    "@vscode/vsce": "^3.6.0",
+    "bumpp": "^10.2.3",
+    "eslint": "^9.33.0",
+    "esno": "^4.8.0",
+    "ovsx": "^0.10.5",
+    "pnpm": "^10.15.0",
+    "rimraf": "^5.0.10",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4",
+    "vsxpub": "^0.1.0"
   }
 }
