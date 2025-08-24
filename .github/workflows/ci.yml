@@ -13,15 +13,14 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
 
       - name: Set node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.x
           cache: pnpm
 
       - name: Setup
@@ -36,15 +35,14 @@ jobs:
   typecheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
 
       - name: Set node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16.x
           cache: pnpm
 
       - name: Setup
@@ -61,20 +59,18 @@ jobs:
 
     strategy:
       matrix:
-        node: [16.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
       fail-fast: false
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
 
       - name: Set node version to ${{ matrix.node }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
           cache: pnpm
 
       - name: Setup
