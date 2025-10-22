@@ -16,6 +16,8 @@ Built on top of [Open in GitHub](https://github.com/fabiospampinato/vscode-open-
 
 ```json
 {
+  // alignment of the label (default: left)
+  "open-in-github-button.align": "left",
   // high priority make it appear first in the status bar (default: 0)
   "open-in-github-button.alignPriority": 0
 }

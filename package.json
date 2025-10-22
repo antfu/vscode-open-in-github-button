@@ -42,6 +42,15 @@
       "type": "object",
       "title": "Project Name In StatusBar extension configuration",
       "properties": {
+        "open-in-github-button.align": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ],
+          "default": "left",
+          "description": "Defines The alignment of the label, requires restart of vscode"
+        },
         "open-in-github-button.alignPriority": {
           "type": "number",
           "default": 0,
