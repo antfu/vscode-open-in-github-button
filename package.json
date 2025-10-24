@@ -36,6 +36,29 @@
   "activationEvents": [
     "onStartupFinished"
   ],
+  "contributes": {
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "Project Name In StatusBar extension configuration",
+      "properties": {
+        "open-in-github-button.align": {
+          "type": "string",
+          "enum": [
+            "left",
+            "right"
+          ],
+          "default": "left",
+          "description": "Defines The alignment of the label, requires restart of vscode"
+        },
+        "open-in-github-button.alignPriority": {
+          "type": "number",
+          "default": 0,
+          "description": "Defines priority of the label. Higher values mean the label should be shown more to the left, requires restart of vscode"
+        }
+      }
+    }
+  },
   "extensionPack": [
     "fabiospampinato.vscode-open-in-github"
   ],
