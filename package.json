@@ -59,7 +59,7 @@
       }
     }
   },
-  "extensionPack": [
+  "extensionDependencies": [
     "fabiospampinato.vscode-open-in-github"
   ],
   "scripts": {
